@@ -37,7 +37,7 @@ services:
         volumes:
           - ./app/:/var/www/app/
         command: "bash -ci 'yarn install'"
-        restart: always
+        restart: no
 
 ###> symfony/mailer ###
     mailer:
