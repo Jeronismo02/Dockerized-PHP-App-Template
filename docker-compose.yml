@@ -36,7 +36,7 @@ services:
             dockerfile: ./infra/images/nodejs/Dockerfile
         volumes:
           - ./app/:/var/www/app/
-        command: "bash -ci 'yarn install && yarn watch'"
+        command: "bash -ci 'yarn install'"
         restart: always
 
 ###> symfony/mailer ###
